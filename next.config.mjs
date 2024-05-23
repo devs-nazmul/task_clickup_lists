@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	
+	transpilePackages: ['iconview'],
+};
 
-export default nextConfig;
+export default nextConfig

@@ -1,0 +1,139 @@
+.list_container{
+    padding: 50px;
+}
+
+/*.list{*/
+/*    display: grid;*/
+/*    grid-template-columns: 50px 1fr 200px 200px 200px 50px ;*/
+/*}*/
+
+/*.head div{*/
+/*    padding: 6px 10px;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.head div:hover{*/
+/*    background: #e8e8e8;*/
+/*}*/
+
+
+.table{
+    width: 100%;
+    font-style: normal;
+}
+
+.table tr{
+    display: grid;
+    grid-template-columns: 30px 1fr 200px 200px 200px 100px ;
+}
+
+.table :where(th, td){
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.table th{
+    color: #656f7d;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+
+
+}
+
+.table svg{
+    color: #87909e;
+}
+
+.table td{
+    font-size: 15px;
+    padding: 6px 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    border: 1.5px solid transparent;
+    color: #2a2e34;
+
+}
+
+.name_info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.name_icon{
+    display: flex;
+    gap: 5px;
+
+}
+
+.name_icon svg{
+    border: 1.5px solid #c7c7c7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #87909e;
+}
+
+.name_icon svg:hover{
+    background: #dadada;
+    cursor: pointer;
+
+}
+
+
+.table td:hover:not(:nth-child(2), :first-child, :last-child){
+    border: 1.5px solid #cccccc;
+}
+
+.table th svg :not(:last-child){
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+
+.name_info :where(:nth-child(1), :nth-child(2)), .table td:where(:last-child) svg{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.name_info:where(:last-child){
+    margin-left: 20px;
+}
+
+.name_info :where(:nth-child(1), :nth-child(2)):hover, .table td:where(:last-child) svg:hover{
+    background: #d9d9d9;
+}
+
+.table th:hover svg{
+    opacity: 1;
+}
+
+.row td:first-child{
+    opacity: 0;
+    padding: 5px;
+}
+
+.row:hover td:first-child{
+    opacity: 1;
+}
+
+.table th:hover{
+    background: #f3f3f3;
+}
+
+.table tr:hover:not(:first-child){
+    background: #f3f3f3;
+}
+
+.table :where(:where(:nth-child(1), :nth-child(6))){
+    justify-self: center;
+}

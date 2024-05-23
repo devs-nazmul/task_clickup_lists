@@ -1,9 +1,9 @@
+import css from "./Sidebar.module.css"
 
-
-export default function List(){
+export default function Sidebar(){
 	return(
-		<div>
-			List
+		<div className={css.sidebar}>
+			This is Only Sidebar
 		</div>
 	)
 }
